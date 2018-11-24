@@ -1,5 +1,5 @@
-from picamera import PiCamera
 from __future__ import division
+from picamera import PiCamera
 from time import sleep
 from time import time
 import boto3
