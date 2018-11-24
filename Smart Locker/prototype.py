@@ -77,7 +77,7 @@ while True:
         correct_face = validate_face(response)
         if correct_face:
             pwm.set_pwm(0, 0, servo_max)
-            time.sleep(10)
+            sleep(10)
             # pwm.set_pwm(0, 0, servo_min)
             break
         else:
