@@ -78,7 +78,7 @@ while True:
         if correct_face:
             pwm.set_pwm(0, 0, servo_max)
             sleep(10)
-            # pwm.set_pwm(0, 0, servo_min)
+            pwm.set_pwm(0, 0, servo_min)
             break
         else:
             print("Face not found, trying again in a while")
@@ -95,13 +95,4 @@ while True:
 
 
 
-# Set frequency to 60hz, good for servos.
 
-
-print('Moving servo on channel 0, press Ctrl-C to quit...')
-while True:
-    # Move servo on channel O between extremes.
-    pwm.set_pwm(0, 0, servo_min)
-    time.sleep(1)
-    pwm.set_pwm(0, 0, servo_max)
-time.sleep(1)
