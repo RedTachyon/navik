@@ -1,7 +1,7 @@
 <nav>
-  <mat-toolbar>
+  <mat-toolbar color="primary">
     <mat-toolbar-row id="mainSiteNav">
-        <h1>SITRA Portal</h1>
+        <h1 (click)="unselectPartner()">SITRA Portal</h1>
         <div>
           <mat-form-field id="searchField">
               <mat-icon matPrefix id="searchIcon">search</mat-icon>
@@ -10,7 +10,7 @@
                 <mat-icon>close</mat-icon>
               </button>
           </mat-form-field>
-          <mat-menu #languages="matMenu">
+          <mat-menu #languages="matMenu" color="accent">
             <button mat-menu-item (click)="choseALanguage('EN')">EN</button>
             <button mat-menu-item (click)="choseALanguage('FI')">FI</button>
             <button mat-menu-item (click)="choseALanguage('SV')">SV</button>
@@ -23,9 +23,9 @@
     </mat-toolbar-row>
   </mat-toolbar>
 </nav>
-<h2>Choose where your data go while making your life easier!</h2>
-<main>
-  <mat-card matRipple class="partner-card" *ngFor="let partner of partners">
+<h2>{{selectedPartner ? "Test" : "Choose where your data go while making your life easier!"}}</h2>
+<main *ngIf="!selectedPartner">
+  <mat-card matRipple class="partner-card" *ngFor="let partner of partners" (click)="selectPartner(partner.id)">
     <img mat-card-image src="{{partner.logo}}" alt="{{partner.name}}">
     <mat-card-content class="partner-card-content">
       <h3>{{partner.shortDescription}}</h3>
@@ -33,5 +33,6 @@
     </mat-card-content>
   </mat-card>
 </main>
-
-<router-outlet></router-outlet>
+<main>
+  <app-partner-page *ngIf="selectedPartner" [partner]="selectedPartner"></app-partner-page>
+</main>
