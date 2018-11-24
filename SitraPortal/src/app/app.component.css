@@ -1,0 +1,71 @@
+#mainSiteNav {
+    display: flex;
+    height: 15vh;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    width: 96vw;
+}
+
+#languages {
+    background: transparent;
+    box-shadow: none;
+}
+
+#searchField {
+    max-width: 20vw;
+    min-width: 20vw;
+}
+
+#searchIcon {
+    vertical-align: sub;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    margin: 3vh;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partner-card {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 400px;
+    max-height: 400px;
+    margin: 1vw;
+    overflow: hidden;
+    background: transparent;
+    box-shadow: none;
+}
+
+.partner-card img {
+    display: block;
+    width: 80%;
+    height: auto;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.partner-card-content {
+    margin: 2%;
+    margin-bottom: 0;
+    width: 98%;
+    position: absolute;
+    top: 325px;
+}
+
+h3 {
+    text-align: center;
+}
