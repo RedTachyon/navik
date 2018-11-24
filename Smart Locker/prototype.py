@@ -76,12 +76,13 @@ while True:
     else:
         correct_face = validate_face(response)
         if correct_face:
+            print("Correct face found, moving")
             pwm.set_pwm(0, 0, servo_max)
             sleep(10)
             pwm.set_pwm(0, 0, servo_min)
             break
         else:
-            print("Face not found, trying again in a while")
+            print("Correct face not found, trying again in a while")
             sleep(5)
 
 # Uncomment to enable debug output.
