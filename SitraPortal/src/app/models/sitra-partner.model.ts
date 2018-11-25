@@ -4,4 +4,6 @@ export interface SitraPartner {
     logo: string;
     shortDescription: string;
     description: string;
+    dataRequired: Array<string>;
+    dataUsed: Array<string>;
 }

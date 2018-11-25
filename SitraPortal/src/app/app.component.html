@@ -23,10 +23,12 @@
     </mat-toolbar-row>
   </mat-toolbar>
 </nav>
-<h2>{{selectedPartner ? "Test" : "Choose where your data go while making your life easier!"}}</h2>
+<h2>{{selectedPartner ? selectedPartner.name : "Choose where your data go while making your life easier!"}}</h2>
 <main *ngIf="!selectedPartner">
   <mat-card matRipple class="partner-card" *ngFor="let partner of partners" (click)="selectPartner(partner.id)">
-    <img mat-card-image src="{{partner.logo}}" alt="{{partner.name}}">
+    <div id="logo_container">
+        <img mat-card-image src="{{partner.logo}}" alt="{{partner.name}}">
+    </div>
     <mat-card-content class="partner-card-content">
       <h3>{{partner.shortDescription}}</h3>
       <p>{{partner.description}}</p>

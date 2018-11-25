@@ -15,22 +15,56 @@ export class AppComponent {
       id: "1",
       name: "Navik",
       logo: "https://preview.ibb.co/f5QecA/navik-logo-Recovered.jpg",
-      shortDescription: "Take it easy",
-      description: "We help you get more by doing less"
+      shortDescription: "I'll have the usual",
+      description: "Make your life easier by facilitating your regular purchases",
+      dataRequired: [
+        "1",
+        "2",
+        "4",
+        "6",
+        "11"
+      ],
+      dataUsed: [
+        "3",
+        "5",
+        "7",
+        "8",
+        "9",
+        "13",
+        "15"
+      ]
     },
     {
       id: "2",
-      name: "Life",
-      logo: "https://fr.freelogodesign.org/Content/img/slide-logo-3.png",
-      shortDescription: "Eat healthy",
-      description: "We help you eat more healthy without the need to change your habits"
+      name: "Novink",
+      logo: "https://i.ibb.co/TkVWKVN/novink.jpg",
+      shortDescription: "Knowledge *you* care about",
+      description: "Get the latest news stories and articles that are actually relevant to you",
+      dataRequired: [
+        "8"
+      ],
+      dataUsed: [
+        "1",
+        "10",
+        "13",
+        "14"
+      ]
     },
     {
       id: "3",
-      name: "StopTheHunt",
-      logo: "https://99designs-start-attachments.imgix.net/alchemy-pictures/2016%2F02%2F22%2F04%2F07%2F21%2F9757e437-5ec1-4378-804f-ca0f9567c110%2F380048_Widakk.png?auto=format&ch=Width%2CDPR&w=250&h=250",
-      shortDescription: "Hunt the hunter",
-      description: "If you are an animal lover, you will also love this app who tries to protect our beloved companions from evil hunters."
+      name: "Nazdring",
+      logo: "https://i.ibb.co/M2N0Vgj/nazdring.jpg",
+      shortDescription: "Effortless health boost",
+      description: "Get valuable health advice that falls in line with your life",
+      dataRequired: [
+        "2",
+        "5",
+        "9"
+      ],
+      dataUsed: [
+        "1",
+        "7"
+      ]
     }
   ];
   selectedPartner: SitraPartner;

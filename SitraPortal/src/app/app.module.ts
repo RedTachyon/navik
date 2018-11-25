@@ -14,6 +14,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatRippleModule } from '@angular/material/core';
 import { PartnerPageComponent } from './partner-page/partner-page.component';
+import { MatListModule } from '@angular/material/list';
+import { MatStepperModule } from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { PartnerPageComponent } from './partner-page/partner-page.component';
     MatButtonModule,
     MatIconModule,
     MatInputModule,
-    MatRippleModule
+    MatRippleModule,
+    MatListModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
