@@ -53,6 +53,12 @@ while True:
     picpath = '/home/pi/pics/test_' + str(today) + '.jpg'
     camera.capture(picpath)
     camera.stop_preview()
+    
+    print("Pretending that a correct face was found, moving")
+    pwm.set_pwm(0, 0, servo_max)
+    sleep(10)
+    pwm.set_pwm(0, 0, servo_min)
+    break
 
     try:
         with open(picpath, "rb") as imageFile:
